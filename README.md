@@ -63,6 +63,12 @@ Playing around with a system similar to how Zapier does it. Very much incomplete
 
 - **Passing data across the "thread" boundary is quite cumbersome** and will require you to use `Arc` and `.copy` API quite a lot (most likely).
 
+  - The `Arc` stands for _atomic reference counter_ and it is a type of a _smart pointer_.
+
+    - **The _smart pointer_ is smart because it contains additional capabilities like memory management and other metadata that the "regular" pointer does not**.
+
+    - [Read more about _smart pointers_ here](https://doc.rust-lang.org/beta/book/ch15-00-smart-pointers.html).
+
 - We can even match on tuples in Rust. Pretty neat!
 
   ```rust
